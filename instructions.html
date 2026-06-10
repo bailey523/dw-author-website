@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructions</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- menu header -->
+    <div id="header-placeholder"></div>
+    <!-- load header -->
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header-placeholder").innerHTML = html;
+        });
+    </script>
+
+    <div class="container">
+      <h1>Instructions</h1>
+      <p>
+        <!-- add content for the Instructions here -->
+      </p>
+    </div>
+  </body>
+</html>
